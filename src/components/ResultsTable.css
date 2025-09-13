@@ -1,0 +1,69 @@
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.document-card {
+  background: var(--card-background);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 4px solid var(--primary-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.document-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.filename {
+  font-weight: 600;
+  word-break: break-all;
+  margin-bottom: 1rem;
+  color: #1a233a;
+  font-size: 1.1rem;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-complete { background-color: var(--status-complete); }
+.status-failed { background-color: var(--status-failed); }
+.status-processing { background-color: var(--status-processing); color: #333; }
+.status-uploading... { background-color: var(--secondary-color); }
+
+.card-actions button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.card-actions button:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+}
+
+.card-actions button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}

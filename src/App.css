@@ -1,0 +1,40 @@
+:root {
+  --primary-color: #007bff; /* Vibrant Blue */
+  --secondary-color: #17a2b8; /* Teal Accent */
+  --background-color: #f8f9fa; /* Light Grey */
+  --card-background: #ffffff;
+  --header-background: linear-gradient(90deg, #1a233a 0%, #2c3e50 100%); /* Deep Blue Gradient */
+  --text-color: #343a40;
+  --subtle-text: #6c757d;
+  --border-color: #dee2e6;
+  --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --status-complete: #28a745;
+  --status-failed: #dc3545;
+  --status-processing: #ffc107;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.App-header {
+  background: var(--header-background);
+  padding: 25px 20px;
+  color: white;
+  text-align: center;
+  border-bottom: 4px solid var(--secondary-color);
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.App-main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
